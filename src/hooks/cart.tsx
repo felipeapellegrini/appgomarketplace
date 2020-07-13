@@ -54,7 +54,6 @@ const CartProvider: React.FC = ({ children }) => {
         );
       } else {
         setProducts([...products, { ...product, quantity: 1 }]);
-        console.log('aqui');
       }
 
       await AsyncStorage.setItem(
